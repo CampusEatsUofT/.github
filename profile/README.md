@@ -8,6 +8,18 @@ In addition, we understand the challenges posed by high delivery and platform fe
 
 Consequently, we would like to develop a mobile app named CampusEats, allowing users to place orders online with ease, browse food menus, provide diverse meal options/plans, and unlock exclusive discounts tailored to students. Our mission is to provide a better dining solution for all campus members.
 
+## Repository 🖋️
+
+[CampusEatsUser](https://github.com/CampusEatsUofT/CampusEatsUser)
+
+[CampusEatsRestaurant](https://github.com/CampusEatsUofT/CampusEatsRestaurant)
+
+[CampusEatsDriver](https://github.com/CampusEatsUofT/CampusEatsDriver)
+
+CampusEatsWebsite TBD
+
+CampusEatsBackend TBD
+
 ## Links 🔗
 
 [Campus Eats Documentation && TimeLine](https://docs.google.com/document/d/1IP29HjpJNOuVP58zS5mxg3-Lg6SlL1kx8plmMK2Uv0k/edit?usp=sharing)
