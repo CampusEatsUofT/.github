@@ -16,9 +16,9 @@ Consequently, we would like to develop a mobile app named CampusEats, allowing u
 
 [CampusEatsDriver](https://github.com/CampusEatsUofT/CampusEatsDriver)
 
-CampusEatsWebsite TBD
+[CampusEatsWebsite](https://github.com/CampusEatsUofT/CampusEatsWebsite)
 
-CampusEatsBackend TBD
+[CampusEatsBackend](https://github.com/CampusEatsUofT/CampusEatsBackend)
 
 ## Links 🔗
 
