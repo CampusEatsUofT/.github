@@ -32,4 +32,4 @@ Consequently, we would like to develop a mobile app named CampusEats, allowing u
 
 ## Contributors 🧑‍🤝‍🧑
 
-@Yuanxyyds @KevinLiTian @YixyG @TheTomLi @Emma @Hardy-Z-Gu @WilliamJiH @MarksonChen @AmbitiousChloe @YukiJudaiii @Sherry @jacksun007 (Supervisor)
+[@Yuanxyyds](https://github.com/Yuanxyyds) [@KevinLiTian](https://github.com/KevinLiTian) [@YixyG](https://github.com/YixyG) [@TheTomLi](https://github.com/TheTomLi) [@EmmaLuo0](https://github.com/EmmaLuo0) [@Hardy-Z-Gu](https://github.com/Hardy-Z-Gu) [@WilliamJiH](https://github.com/WilliamJiH) [@MarksonChen](https://github.com/MarksonChen) [@AmbitiousChloe](https://github.com/AmbitiousChloe) [@YukiJudaiii](https://github.com/YukiJudaiii) @Sherry [@HS-ZHOU](https://github.com/HS-ZHOU) @Ahana @Zackary [@jacksun007](https://github.com/jacksun007) (Supervisor)
