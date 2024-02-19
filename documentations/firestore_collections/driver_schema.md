@@ -25,8 +25,8 @@ drivers (collection)
 ### Driver's Orders (OrderStates Documents, not Order Documents)
 
 Driver Order States Documents (path: `drivers/{driverId}/orders/{orderId}`, represented by
-`OrderStateModel`), stores all order status information of this driver. This document is private.
-This document contains no sub-collection.
+`DroverOrderStateModel`), stores all order status information of this driver. This document is
+private. This document contains no sub-collection.
 
 ```
 orders (collection)
@@ -34,7 +34,10 @@ orders (collection)
         orderId (string)
         orderStatus (string)
         driverStatus (string?)
+        transferStatus (string)
+        expectedEarning (number)
         
+    transferStatus: invalid, pending, done     
     orderStatus: one of the OrderStatus
     driverStatus: null if this isn't delivery order. one of the DriverStatus
 ```

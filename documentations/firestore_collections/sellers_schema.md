@@ -25,7 +25,7 @@ sellers (collection) [UserModel]
 ### Sellers's Orders (OrderStates Documents, not Order Documents)
 
 Seller Order States Documents (path: `sellers/{sellerId}/orders/{orderId}`, represented by
-`OrderStateModel`), stores all order status information of this seller. This document is private.
+`SellerOrderStateModel`), stores all order status information of this seller. This document is private.
 This document contains no sub-collection.
 
 ```
@@ -34,15 +34,20 @@ orders (collection)
         orderId (string)
         orderStatus (string)
         driverStatus (string?)
+        transferStatus (string)
+        expectedEarning (number)
+        taxRefund (number)
+        earningRefund (number)
         
+    transferStatus: invalid, pending, done
     orderStatus: one of the OrderStatus
     driverStatus: null if this isn't delivery order. one of the DriverStatus
 ```
 
 ### Seller's Notification
 
-Sellers Notification Documents (path: `sellers/{sellerId}/notifications/{notificationId}`, 
-represented by `NotificationModel`), stores all notifications of this seller. This document is 
+Sellers Notification Documents (path: `sellers/{sellerId}/notifications/{notificationId}`,
+represented by `NotificationModel`), stores all notifications of this seller. This document is
 private. This document contains no sub-collection.
 
 ```

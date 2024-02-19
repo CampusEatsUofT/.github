@@ -60,15 +60,17 @@ cartItems (collection)
 ### User's Orders (OrderStates Documents, not Order Documents)
 
 User Order States Documents (path: `users/{userId}/orders/{orderId}`, represented by
-`OrderStateModel`), stores all order status information of this user. This document is private.
+`UserOrderStateModel`), stores all order status information of this user. This document is private.
 This document contains no sub-collection.
 
 ```
 orders (collection)
     $orderId (document)
         orderId (string)
+        createdAt (timestamp)
         orderStatus (string)
         driverStatus (string?)
+        status (string)
         
     orderStatus: one of the OrderStatus
     driverStatus: null if this isn't delivery order. one of the DriverStatus
