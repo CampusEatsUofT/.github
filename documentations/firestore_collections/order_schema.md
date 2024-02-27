@@ -28,16 +28,18 @@ orders (collection)
         userId (string)
         contactName (string)
         phoneNumber (string)
-        restaurantLocation (map)   
-            shortName (string)
-            streetAddress (string)
-            latitude (number)
-            longitude (number)
-        restaurantId (string)
-        restaurantName (string)
-        restaurantPhotoUrl (string)
-        orderNote (string?)
-        takeCutlery (bool)
+        restaurantInfo (map)
+            restaurantLocation (map)   
+                shortName (string)
+                streetAddress (string)
+                latitude (number)
+                longitude (number)
+            restaurantId (string)
+            restaurantName (string)
+            restaurantPhotoUrl (string)
+        orderNotes (map)
+            orderNote (string?)
+            takeCutlery (bool)
         receiveTime (timestamp)
         foods (List<map>)
           foodId (string)
@@ -46,13 +48,15 @@ orders (collection)
           singlePrice (number)
           foodNote (string)
           topping (string)
-        foodSubtotal (number)
-        taxFee (number)
-        shippingFee (number)
-        applicationFee (number)
-        tips (number)
-        discount (number)
-        totalFee (number)
+        price (map)
+            foodSubtotal (number)
+            tax (number)
+            shippingFee (number)
+            applicationFee (number)
+            tips (number)
+            sellerDiscount (number)
+            platformDiscount (number)
+            totalCharge (number)
         userPickupCode (string)
         
     orderStatus: 'unpaid', 'submitted', 'accepted', 'ready', 'picked', 'arrived', 'completed',
@@ -63,6 +67,9 @@ orders (collection)
     recieveTime: expect Pickup time
     foods: List of FoodInOrderModel
     userPickupCode: 4-digits code used for user verification
+    price: Instance of OrderPriceModel
+    orderNotes: Instance of OrderNotesModel
+    restaurantInfo: Instance of OrderRestaurantInfoModel
 ```
 
 #### Delivery Order
@@ -106,16 +113,18 @@ orders (collection)
             phoneNumber (string)
         userId (String)
         driverId (String?)
-        restaurantLocation (map)     
-            shortName (string)
-            streetAddress (string)
-            latitude (number)
-            longitude (number)
-        restaurantId (string)
-        restaurantName (string)
-        restaurantPhotoUrl (string)
-        orderNote (string?)
-        takeCutlery (bool)
+        restaurantInfo (map)
+            restaurantLocation (map)   
+                shortName (string)
+                streetAddress (string)
+                latitude (number)
+                longitude (number)
+            restaurantId (string)
+            restaurantName (string)
+            restaurantPhotoUrl (string)
+        orderNotes (map)
+            orderNote (string?)
+            takeCutlery (bool)
         receiveTime (timestamp)
         foods (array of FoodInOrderModel) 
           foodId (string)
@@ -124,13 +133,15 @@ orders (collection)
           singlePrice (number)
           foodNote (string)
           topping (string)
-        foodSubtotal (number)
-        taxFee (number)
-        shippingFee (number)
-        applicationFee (number)
-        tips (number)
-        discount (number)
-        totalFee (number)
+        price (map)
+            foodSubtotal (number)
+            tax (number)
+            shippingFee (number)
+            applicationFee (number)
+            tips (number)
+            sellerDiscount (number)
+            platformDiscount (number)
+            totalCharge (number)
         userPickupCode (String)
         driverPickupCode (String)
         
@@ -146,6 +157,9 @@ orders (collection)
     foods: List of FoodInOrderModel
     userPickupCode: 4-digits code used for user verification
     driverPickupCode: 4-digits code used for driver verification
+    price: Instance of OrderPriceModel
+    orderNotes: Instance of OrderNotesModel
+    restaurantInfo: Instance of OrderRestaurantInfoModel
 ```
 
 #### GrabAndGo Order
@@ -172,16 +186,18 @@ orders (collection)
         userId (String)
         contactName (String)
         phoneNumber (String)
-        restaurantLocation (map)      
-            shortName (string)
-            streetAddress (string)
-            latitude (number)
-            longitude (number)
-        restaurantId (string)
-        restaurantName (string)
-        restaurantPhotoUrl (string)
-        orderNote (string?)
-        takeCutlery (bool)
+        restaurantInfo (map)
+            restaurantLocation (map)   
+                shortName (string)
+                streetAddress (string)
+                latitude (number)
+                longitude (number)
+            restaurantId (string)
+            restaurantName (string)
+            restaurantPhotoUrl (string)
+        orderNotes (map)
+            orderNote (string?)
+            takeCutlery (bool)
         receiveTime (timestamp)
         foods (array of FoodInOrderModel) 
           foodId (string)
@@ -190,13 +206,15 @@ orders (collection)
           singlePrice (number)
           foodNote (string)
           topping (string)
-        foodSubtotal (number)
-        taxFee (number)
-        shippingFee (number)
-        applicationFee (number)
-        tips (number)
-        discount (number)
-        totalFee (number)
+        price (map)
+            foodSubtotal (number)
+            tax (number)
+            shippingFee (number)
+            applicationFee (number)
+            tips (number)
+            sellerDiscount (number)
+            platformDiscount (number)
+            totalCharge (number)
         userPickupCode (String)
                         
     referenceId: reference to grabAndGo, other common shared data. Referece Id follows
@@ -210,11 +228,14 @@ orders (collection)
     recieveTime: expect Pickup time
     foods: List of FoodInOrderModel
     userPickupCode: 4-digits code used for user verification
+    price: Instance of OrderPriceModel
+    orderNotes: Instance of OrderNotesModel
+    restaurantInfo: Instance of OrderRestaurantInfoModel
 ```    
-    
+
 ### Chats
 
-Chats Documents (path: `orders/{orderId}/chats/{chatType}`, represented by `ChatModel`), stores 
+Chats Documents (path: `orders/{orderId}/chats/{chatType}`, represented by `ChatModel`), stores
 basic chat information. This document is public. This document contains one sub-collection
 `messages`.
 
@@ -236,10 +257,9 @@ chats (collection)
    onSection: Whether this chat session is active
 ```
 
-
 ### Message
 
-Messages Documents (path: `orders/{orderId}/chats/{chatType}/messages/{messageId}`, represented by 
+Messages Documents (path: `orders/{orderId}/chats/{chatType}/messages/{messageId}`, represented by
 `MessageModel`), stores message information. This document is public. This document contains no
 sub-collection.
 
