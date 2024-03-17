@@ -28,6 +28,10 @@ Consequently, we would like to develop a mobile app named CampusEats, allowing u
 
 [Github Project Tickets](https://github.com/orgs/CampusEatsUofT/projects/2)
 
+[Firebase Dev-env Project](https://console.firebase.google.com/project/campus-eats-dev/overview)
+
+[Firebase Dev-env Project](https://console.firebase.google.com/project/campus-eats-a464a/overview)
+
 [Slack Channel Invite](https://join.slack.com/t/campus-eats/shared_invite/zt-28abpgq2b-iMVYcVanWefYH~GYpYqkZQ)
 
 [Figma Design](https://www.figma.com/file/dIYcapmidpxNDEGCdoWsJM/Food-HQ---Delivery-Food-App?type=design&node-id=1713%3A34186&mode=design&t=hAuFo5PcIRl6MrMM-1)
