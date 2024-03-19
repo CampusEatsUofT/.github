@@ -3,7 +3,7 @@
 ### Grab And Go Schedule
 
 Grab And Go Schedule Documents (path: `grabAndGoSchedules/{locationId}`, represented by
-`GrabAndGoScheduleModel`), stores pre-defined grab and go location. This document is public.
+`GrabAndGoScheduleModel`), stores pre-defined schedule. This document is public.
 This document contains no sub-collection.
 
 ```

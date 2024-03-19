@@ -2,8 +2,8 @@
 
 ### Stripe Customers
 
-Stripe Customer Documents (path: `stripeCustomers/{userId}`, represented by `StripeCustomerModel`),
-stores the test and live stripe customer ID of given userId. This document is private. This document
+Stripe Customer Documents (path: `stripeCustomers/{userId}`, represented by `StripeCustomerModel`), 
+stores the test and live stripe customer ID of given userId. This document is private. This document 
 contains sub-collection including `paymentMethods`, and `payments`.
 
 ```
@@ -11,15 +11,14 @@ stripeCustomers
     $userId
         userId (string)
         customerId (string)
-        customerTestId (string)
         balance (int)
 ```
 
 ### Stripe Payment Methods
 
-Stripe Customer's Payment Method Documents (path:
+Stripe Customer's Payment Method Documents (path: 
 `stripeCustomers/{userId}/paymentMethods/{paymentMethodId}`, represented by `PaymentMethodModel`),
-stores the summary of payment methods of this stripe customer. This document is private. This
+stores the summary of payment methods of this stripe customer. This document is private. This 
 document contains no sub-collection.
 
 #### CardPaymentMethod
@@ -31,7 +30,6 @@ paymentMethods (collection)
         paymentMethodId (string)
         paymentMethodType (string)
         hasVerified (bool)
-        isTest (bool)
         lastFour (string)
         expMonth (int)
         expYear (int)
@@ -63,7 +61,6 @@ payments (collection)
         currency (string)
         paymentMethodId (string)
         paymentIntentId (String)
-        isTest (bool)
         
     paymentType: Instance of PaymentType, equals to 'order'
 ```

@@ -46,8 +46,8 @@ orders (collection)
 
 ### Seller's Notification
 
-Sellers Notification Documents (path: `sellers/{sellerId}/notifications/{notificationId}`,
-represented by `NotificationModel`), stores all notifications of this seller. This document is
+Sellers Notification Documents (path: `sellers/{sellerId}/notifications/{notificationId}`, 
+represented by `NotificationModel`), stores all notifications of this seller. This document is 
 private. This document contains no sub-collection.
 
 ```
